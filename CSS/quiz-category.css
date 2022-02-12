@@ -1,0 +1,87 @@
+main{
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 12rem auto ;
+    grid-template-rows: 5rem auto ;
+    grid-template-areas: 
+                "side-bar nav-bar"
+                "side-bar main-quiz-area"
+                "side-bar main-quiz-area";
+}
+.nav-bar{
+    padding: 0;
+    grid-area: nav-bar;
+    background-color: var(--section-background-color);
+}
+.list-pills{
+    width: fit-content;
+    background-color: var(--background-color);
+}
+.side-bar{
+    grid-area: side-bar;
+}
+.side-bar > .nav-bar{
+    background-color: var(--background-color);
+    padding-top: 3rem;
+}
+.main-quiz-area{
+    max-height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    overflow-y: scroll;
+    background-color: var(--section-background-color);
+    grid-area: main-quiz-area;
+}
+.flex-col{
+    flex-direction: column;
+    height: 100%;
+}
+.side-hero-img{
+    width: 10rem;
+}
+.header-image{
+    width: 20rem;
+}
+.card{
+    width: 20rem;
+}
+.list-wrap{
+    width: fit-content;
+    display: flex;
+}
+.modal-img{
+    width: 8rem;
+}
+.dialog-header{
+    display: flex;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: var(--section-background-color);
+}
+.ham-btn{
+    background-color: var(--section-background-color);
+}
+.nav-bar{
+    padding: 0 2rem;
+}
+@media only screen and (max-width: 800px) {
+    /* .hide{
+        display: block;
+    } */
+    .side-bar{
+        display: none;
+    }
+    .main-quiz-area{
+        justify-content: center;
+    }
+    main{
+        grid-template-areas: 
+                        "nav-bar nav-bar"
+                        "main-quiz-area main-quiz-area"
+                        "main-quiz-area main-quiz-area"
+        ;
+    }
+  }
