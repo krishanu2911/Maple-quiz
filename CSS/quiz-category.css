@@ -17,9 +17,6 @@ main{
     width: fit-content;
     background-color: var(--background-color);
 }
-.hide{
-    display: none;
-}
 .side-bar{
     grid-area: side-bar;
 }
@@ -71,9 +68,9 @@ main{
     padding: 0 2rem;
 }
 @media only screen and (max-width: 800px) {
-    .hide{
+    /* .hide{
         display: block;
-    }
+    } */
     .side-bar{
         display: none;
     }
