@@ -7,9 +7,6 @@ main{
     min-height: 100vh;
 }
 .footer-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 5rem;
     background-color: var(--background-color);
@@ -17,9 +14,6 @@ main{
 .main-content-area{
     margin-top: 5rem;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items:center;
     gap: 1rem;
 }
 .paragraph{
@@ -33,9 +27,6 @@ main{
     gap: 1rem;
 }
 .hero-img-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 30rem;
     height: 20rem;
 }
@@ -46,7 +37,7 @@ main{
     color: var(--headline-color);
 }
 .nav-bar{
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1rem  3rem;
 }
 .link-text{
     color: var(--primary-color);
