@@ -19,7 +19,16 @@
     justify-content: center;
     align-items: flex-start;
 }
-
+.result-area{
+    padding: 1rem;
+    min-height: 5rem;
+    width: 100%;
+    border: 5px solid var(--success-text-color);
+    background-color: var(--success-color-light);
+}
+.result-area .btn-link{
+    color: var(--fail-text-color);
+}
 @media only screen and (max-width: 800px) {
     .hide{
         display: block;
